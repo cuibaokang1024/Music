@@ -4,7 +4,7 @@ import { getUid } from 'common/js/uid'
 import { ERR_OK } from 'api/config'
 const debug = process.env.NODE_ENV !== 'production'
 export function getLyric (mid) {
-  const url = debug ? '/api/getLyric' : 'http://39.96.195.160/music/api/getLyric'
+  const url = debug ? '/api/getLyric' : 'http://47.105.93.204/music/api/getLyric'
   const data = Object.assign({}, commonParams, {
     songmid: mid,
     pcachetime: +new Date(),
@@ -21,7 +21,7 @@ export function getLyric (mid) {
   })
 }
 export function getSongsUrl (songs) {
-  const url = debug ? '/api/getPurlUrl' : 'http://ustbhuangyi.com/music/api/getPurlUrl'
+  const url = debug ? '/api/getPurlUrl' : 'http://47.105.93.204/music/api/getPurlUrl'
 
   let mids = []
   let types = []

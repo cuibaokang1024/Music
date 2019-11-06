@@ -12,7 +12,7 @@ export function getRecommend () {
   return jsonp(url, data, options)
 }
 export function getDiscList () {
-  const url = debug ? '/api/getDiscList' : 'http://39.96.195.160/music/api/getDiscList'
+  const url = debug ? '/api/getDiscList' : 'http://47.105.93.204/music/api/getDiscList'
   const data = Object.assign({}, commonParams, {
     platform: 'yqq',
     hostUin: 0,
@@ -29,7 +29,7 @@ export function getDiscList () {
   })
 }
 export function getSingerList () {
-  const url = debug ? '/api/getSingerList' : 'http://39.96.195.160/music/api/getSingerList'
+  const url = debug ? '/api/getSingerList' : 'http://47.105.93.204/music/api/getSingerList'
   const data = Object.assign({}, commonParams, {
     g_tk: 5381,
     loginUin: 0,
@@ -51,7 +51,7 @@ export function getSingerList () {
 }
 
 export function getSongList (disstid) {
-  const url = debug ? '/api/getCdInfo' : 'http://39.96.195.160/music/api/getCdInfo'
+  const url = debug ? '/api/getCdInfo' : 'http://47.105.93.204/music/api/getCdInfo'
   const data = Object.assign({}, commonParams, {
     disstid,
     type: 1,

@@ -2,7 +2,7 @@ import {commonParams} from './config'
 import axios from 'axios'
 const debug = process.env.NODE_ENV !== 'production'
 export function getTopList (disstid) {
-  const url = debug ? '/api/getTopList' : 'http://39.96.195.160/music/api/getTopList'
+  const url = debug ? '/api/getTopList' : 'http://47.105.93.204/music/api/getTopList'
   const data = Object.assign({}, commonParams, {
     g_tk: '5381',
     uin: '0',
@@ -21,7 +21,7 @@ export function getTopList (disstid) {
   })
 }
 export function getMusicList (topid) {
-  const url = debug ? '/api/getMusicList' : 'http://39.96.195.160/music/api/getMusicList'
+  const url = debug ? '/api/getMusicList' : 'http://47.105.93.204/music/api/getMusicList'
   const data = Object.assign({}, commonParams, {
     g_tk: '5381',
     uin: '0',

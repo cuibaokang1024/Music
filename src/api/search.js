@@ -2,7 +2,7 @@ import {commonParams} from './config'
 import axios from 'axios'
 const debug = process.env.NODE_ENV !== 'production'
 export function getHotKey () {
-  const url = debug ? '/api/getHotKey' : 'http://39.96.195.160/music/api/getHotKey'
+  const url = debug ? '/api/getHotKey' : 'http://47.105.93.204/music/api/getHotKey'
   const data = Object.assign({}, commonParams, {
     _: '1551421614117',
     g_tk: '5381',
@@ -21,7 +21,7 @@ export function getHotKey () {
   })
 }
 export function search (query, page, zhida, perpage) {
-  const url = debug ? '/api/search' : 'http://39.96.195.160/music/api/search'
+  const url = debug ? '/api/search' : 'http://47.105.93.204/music/api/search'
   const data = Object.assign({}, commonParams, {
     _: '1551423204972',
     uin: '0',
