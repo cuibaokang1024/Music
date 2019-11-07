@@ -47,6 +47,7 @@ app.get('/api/getDiscList', function (req, res) {
       res.json(response.data)
     }).catch((e) => {
       console.log(e)
+    })
   }),
   app.get('/api/getLyric', function (req, res) {
     const url = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg'
